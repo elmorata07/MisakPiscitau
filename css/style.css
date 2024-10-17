@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: ada;
+}
+body{
+	
+    background-image:url(../asets/backroun1.jpeg);
+    background-size: cover;
+
+}
+:root{
+    --primary_color:#624E88;
+    --secondary_color:#A594F9;
+    --tercer_color:#EDE8DC;
+    --cuarto_color: #181C14;
+
+}
+@font-face {
+    font-family: ada;
+    src: url(../fonts/Concert_One/ConcertOne-Regular.ttf);
+}
+.img_logo{
+	max-width: 180px;
+	max-height: 180px;
+
+}
+
+.myButton{
+    background-color: var(--tercer_color);
+    border: none;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 40px;
+    color: var(--primary_color);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.myButton:hover{
+    background-color: var(--secondary_color);
+    color:var(--tercer_color) ;
+    cursor: pointer;
+}
+
+.miTitulo {
+    color: var(--tercer_color);
+
+    font-size: 5rem;
+}
+.subtitulo{
+    color: var(--tercer_color);
+    font-size: 4rem;
+}
+.subtitulo3{
+    color: var(--tercer_color);
+    font-size: 2rem;
+}
+.subtitulo4{
+    color: var(--tercer_color);
+    font-size: 1.7rem;
+    
+}
+.subtitulo5{
+    color: var(--tercer_color);
+    font-size: 1rem;
+    
+}
+
+p{
+    color: var(--tercer_color); 
+    font-size: 1.2rem;
+}
+.taita{
+    width: 300px;
+    height: 300px;
+    border-radius:150px;
+
+}
+.carruselImage{
+    /*border-radius: 50% 50% 70% 30% / 46% 41% 59% 54%; */
+    /*border-radius:100px 16% 70px 2px ;*/
+    
+    border-radius: 32px 64px;
+    box-shadow: 20px 20px 205px 23px rgba(98,78,136,0.76);
+-webkit-box-shadow: 20px 20px 205px 23px rgba(98,78,136,0.76);
+-moz-box-shadow: 20px 20px 205px 23px rgba(98,78,136,0.76);
+}
+.subImag{
+    border-radius:50% 50% 70% 30% / 46% 41% 59% 54% ;
+}
+
