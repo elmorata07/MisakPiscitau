@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+    <div>
+        <h1 class="text-center m-5 miTitulo">Registro</h1>
+    </div>
+
+
+
+    <!-- formulario de registro -->
+    <div class="container  " id="contenedor_formulario">
+        <label for="exampleFormControlTextarea1">Datos personales</label>
+        <div id="formulario">
+            <div class="form-row" id="nombres_apellidos">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="nombres" id="name"/>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="apellidos" id="lastname"/>
+                </div>
+            </div>
+
+            <div class="form-row" id="id_direccion">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="cédula/N° identificación" id="identify"/>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="dirección de residencia" id="address"/>
+                </div>
+            </div>
+
+            <div class="form-group" id="perfil">
+                <label for="exampleFormControlTextarea1">Describe tu perfil</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="botones_formulario">
+                <button type="button" class="btn btn-info" id="btn_nuevo" onclick="limpiarformulario()">Nuevo</button>
+                <button type="button" class="btn btn-success" id="btn_registro" onclick="registrar()">Registrar</button>
+                <button   button type="button" class="btn btn-warning" id="btn_actualizar" onclick="actualizar()">Actualizar</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- tabla base de datos -->
+    <div class="container" id="contenedor_tabla_db">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">N° identificación</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Dirección</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="tabladb">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div class="form-inline my-2 my-lg-0 my-sm-0 justify-content-center" id="filtro_busqueda">
+        <input class=" " type="search" placeholder="filtrar por Nº ID" aria-label="Search" id="search_id">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn_buscar" onclick="buscar()">Buscar</button>
+    </div>
+
+    <!-- tabla busqueda -->
+    <div class="container" id="contenedor_tabla_filtro">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">N° identificación</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Dirección</th>
+              </tr>
+            </thead>
+            <tbody id="tabla_filtro">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <script src="./registro.js"></script>
+
+
+
+</body>
+</html>

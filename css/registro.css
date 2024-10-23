@@ -1,0 +1,59 @@
+body{
+	
+    background-image:url(../asets/backroundlogin.jpeg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+  
+  
+  }
+  :root{
+    --primary_color:#624E88;
+    --secondary_color:#A594F9;
+    --tercer_color:#EDE8DC;
+    --cuarto_color: #181C14;
+
+}
+@font-face {
+    font-family: ada;
+    src: url(../fonts/Concert_One/ConcertOne-Regular.ttf);
+}
+
+  .miTitulo {
+    color: var(--tercer_color);
+
+    font-size: 5rem;
+}
+
+div#contenedor_formulario {
+    background: silver;
+    height: 450px;
+    border-radius: 15px;
+    padding-top: 26px;
+    margin-top: 70px;
+}
+
+div#nombres_apellidos {
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+
+div#perfil {
+    margin-top: 23px;
+}
+
+.botones_formulario {
+    margin-left: calc(50% - 130px);
+    margin-bottom: 15px;
+}
+
+div#filtro_busqueda {
+    margin-left: calc(50% - 140px);
+}
+
+div#contenedor_tabla_db {
+    margin-top: 46px;
+}
+
+div#contenedor_tabla_filtro {
+    margin-top: 17px;
+}
