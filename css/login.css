@@ -1,4 +1,11 @@
- 
+body{
+	
+  background-image:url(../asets/backroundlogin.jpeg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+
+
+}
 .form-container {
     width: 320px;
     border-radius: 0.75rem;
@@ -119,5 +126,8 @@
     font-size: 0.75rem;
     line-height: 1rem;
     color: rgba(156, 163, 175, 1);
+  }
+  #login{
+margin-top: 15%;
   }
   
